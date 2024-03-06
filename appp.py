@@ -16,7 +16,9 @@ from txtai.pipeline import Summary, Textractor
 from PyPDF2 import PdfReader
 import sqlite3
 import bcrypt
-
+nltk.download('stopwords')
+nltk.download('punkt') 
+nltk.download('wordnet')
 st.set_page_config(layout="wide")
 # Initialize SQLite database
 conn = sqlite3.connect('users.db')
