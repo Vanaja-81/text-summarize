@@ -14,7 +14,7 @@ import random
 from wordcloud import WordCloud
 nltk.download('stopwords')
 nltk.download('punkt') 
-
+nltk.download('wordnet')
 
 class NeuralExtractiveSummarizer:
     def __init__(self):
