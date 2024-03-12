@@ -302,6 +302,7 @@ def main():
     # Logout button
     if auth_status == "logged_in":
         if st.button("Logout"):
+            st.cache_resource.clear()
             st.session_state.auth_status = "logged_out"
             del st.session_state.username
             st.rerun()
